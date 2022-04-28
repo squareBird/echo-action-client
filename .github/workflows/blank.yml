@@ -1,0 +1,15 @@
+
+name: use echo action
+
+on:
+  push:
+    branches: [ main ]
+    
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: squareBird/github-action@master
+        with:
+          say: 클둥이 안녕~
